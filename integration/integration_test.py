@@ -1,13 +1,4 @@
-# import addition
-# import multiplication
-#
-# def test_integration():
-#     # Test multiplying the result of adding two numbers with another number
-#     assert multiplication.multiply(addition.add(2, 3), 4) == 20
-
 import calculator
-import input_handler
-import requests
 
 def test_addition():
     assert calculator.add(2, 3) == 5
@@ -28,6 +19,3 @@ def test_divide_by_zero():
         assert str(e) == "Cannot divide by zero"
     else:
         assert False, "Expected ValueError"
-
-
-
